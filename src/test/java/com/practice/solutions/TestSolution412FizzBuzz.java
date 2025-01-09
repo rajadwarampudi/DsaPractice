@@ -12,9 +12,9 @@ public class TestSolution412FizzBuzz {
     public void testFizzBuzzSolution() {
         Solution_412_FizzBuzz fizzBuzzSolution = new Solution_412_FizzBuzz();
 
-        assertEquals(fizzBuzzSolution.fizzBuzz(3), List.of("1", "2", "Fizz"));
-        assertEquals(fizzBuzzSolution.fizzBuzz(5), List.of("1", "2", "Fizz","4", "Buzz"));
-        assertEquals(fizzBuzzSolution.fizzBuzz(18), List.of("1", "2", "Fizz","4", "Buzz", "Fizz", "7", "8",
-                "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz"));
+        assertEquals(List.of("1", "2", "Fizz"), fizzBuzzSolution.fizzBuzz(3));
+        assertEquals(List.of("1", "2", "Fizz","4", "Buzz"), fizzBuzzSolution.fizzBuzz(5));
+        assertEquals(List.of("1", "2", "Fizz","4", "Buzz", "Fizz", "7", "8",
+                "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz"), fizzBuzzSolution.fizzBuzz(18));
     }
 }
