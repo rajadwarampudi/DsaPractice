@@ -1,12 +1,36 @@
-I am publishing this project for the potential employers to display my data structure and problem solving skills.
+# 🚀 DSAPractice
 
-I have mostly simple to hard programming puzzles.
 
-Instructions to build and test the solutions
+## 🌟 Overview
+**DSAPractice** is a simple project in java to solve the logical and arthemetic problems using simple algorithematic techniques. These kind of problems will be helpful to become a better programmer at job and address vague code in a better way.
 
-The project is built using gradle. 
-After cloning the repository use the following commands in cli
-        * To Compile the project : "gradle compileJava"
-        * To run unit testcases  : "gradle test"
-        * To compile and test at the same time : "gradle build"
+---
+
+## 📖 Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [License](#license)
+
+---
+
+## ✨ Features
+- 🚀 **Learn Data structures and algorithms:
+
+## 🛠️ Getting Started
+
+### Prerequisites
+Ensure you have the following installed:
+- Java21
+- Gradle v8.x
+
+### Installation
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com/raja.dwarampudi/DsaPractice.git
+cd DsaPractice
+gradle build
+
+* To Compile the project : "gradle compileJava"
+* To run unit testcases  : "gradle test"
+* To compile and test at the same time : "gradle build"
 
