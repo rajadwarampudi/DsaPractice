@@ -1,4 +1,4 @@
-package com.practice.solutions;
+package com.practice.solutions.puzzles;
 
 public class Solution_283_Move_Zeroes {
     public void moveZeroes(int[] nums) {

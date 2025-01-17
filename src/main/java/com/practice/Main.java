@@ -1,17 +1,41 @@
 package com.practice;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import com.practice.solutions.algorithms.dijkstrasshortestpath.Node;
+import com.practice.solutions.algorithms.dijkstrasshortestpath.ShortestPathFinder;
+
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        runDijkstrasAlgorithm();
+    }
+
+    private static void runDijkstrasAlgorithm() {
+        Node nodeA = new Node("A");
+        Node nodeB = new Node("B");
+        Node nodeC = new Node("C");
+        Node nodeD = new Node("D");
+        Node nodeE = new Node("E");
+        Node nodeF = new Node("F");
+
+        nodeA.addAdjacentNode(nodeB, 2);
+        nodeA.addAdjacentNode(nodeC, 4);
+
+        nodeB.addAdjacentNode(nodeC, 3);
+        nodeB.addAdjacentNode(nodeD, 1);
+        nodeB.addAdjacentNode(nodeE, 5);
+
+        nodeC.addAdjacentNode(nodeD, 2);
+
+        nodeD.addAdjacentNode(nodeE, 1);
+        nodeD.addAdjacentNode(nodeF, 4);
+
+        nodeE.addAdjacentNode(nodeC, 2);
+
+        ShortestPathFinder shortestPathFinder = new ShortestPathFinder();
+        shortestPathFinder.calculateShortestPath(nodeA);
+        ShortestPathFinder.printPaths(Arrays.asList(nodeA, nodeB, nodeC, nodeD, nodeE, nodeF));
     }
 }

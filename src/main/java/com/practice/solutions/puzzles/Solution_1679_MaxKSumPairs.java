@@ -1,4 +1,4 @@
-package com.practice.solutions;
+package com.practice.solutions.puzzles;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.practice.solutions;
+package com.practice.solutions.puzzles;
 
 public class Solution_238_ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {

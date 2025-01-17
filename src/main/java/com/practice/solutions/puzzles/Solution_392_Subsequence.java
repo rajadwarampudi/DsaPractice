@@ -1,4 +1,4 @@
-package com.practice.solutions;
+package com.practice.solutions.puzzles;
 
 public class Solution_392_Subsequence {
     public boolean isSubsequence(String s, String t) {

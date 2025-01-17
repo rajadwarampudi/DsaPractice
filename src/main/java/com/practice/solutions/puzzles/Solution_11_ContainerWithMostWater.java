@@ -1,4 +1,4 @@
-package com.practice.solutions;
+package com.practice.solutions.puzzles;
 
 public class Solution_11_ContainerWithMostWater {
     public int maxArea(int[] height) {

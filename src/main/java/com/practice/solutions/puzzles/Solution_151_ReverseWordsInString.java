@@ -1,4 +1,4 @@
-package com.practice.solutions;
+package com.practice.solutions.puzzles;
 
 public class Solution_151_ReverseWordsInString {
     public String reverseWords(String s) {
