@@ -5,22 +5,22 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestSolution26RemoveDuplicatesFromSortedArray {
+public class TestSolution80RemoveDuplicatesFromSortedArrayII {
 
     @Test
     public void testRemoveDuplicates() {
-        Solution_26_RemoveDuplicatesFromSortedArray solution = new Solution_26_RemoveDuplicatesFromSortedArray();
+        Solution_80_RemoveDuplicatesFromSortedArrayII solution = new Solution_80_RemoveDuplicatesFromSortedArrayII();
 
-        int[] nums = new int[]{1, 1, 2};
-        assertEquals(2, solution.removeDuplicates(nums));
-        assertArrayEquals(new int[]{1,2,2}, nums);
-
-        nums = new int[]{0,0,1,1,1,2,2,3,3,4};
+        int[] nums = new int[]{1,1,1,2,2,3};
         assertEquals(5, solution.removeDuplicates(nums));
-        assertArrayEquals(new int[]{0,1,2,3,4,2,2,3,3,4}, nums);
+        assertArrayEquals(new int[]{1,1,2,2,3,3}, nums);
+
+        nums = new int[]{0,0,1,1,1,1,2,3,3};
+        assertEquals(7, solution.removeDuplicates(nums));
+        assertArrayEquals(new int[]{0,0,1,1,2,3,3,3,3}, nums);
 
         nums = new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-        assertEquals(1, solution.removeDuplicates(nums));
+        assertEquals(2, solution.removeDuplicates(nums));
         assertArrayEquals(new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, nums);
 
         nums = new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13};
